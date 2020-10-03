@@ -1,4 +1,4 @@
-package com.azzelo.products;
+package com.demo.products;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
