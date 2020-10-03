@@ -69,10 +69,13 @@ public class ProductsDao {
 	}
 
 	public void deleteProduct(int id){
-		try {
-			productsRepository.deleteById(id);
-		} catch (Exception e) {
-			e.printStackTrace();
+		Optional<ProductsEntity> productById = productsRepository.findById(id);
+		if(productById.isPresent()){
+			try{
+				productsRepository.deleteById(id);;
+			} catch (RuntimeException rException){
+				rException.printStackTrace();
+			}
 		}
 	}
 }
