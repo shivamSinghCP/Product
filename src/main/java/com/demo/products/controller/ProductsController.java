@@ -52,7 +52,7 @@ public class ProductsController{
 		if(id >0 && product != null){
 		return productService.updateProduct(product,id);
 		}
-		return "error in Pur from controller";
+		return "error in Put from controller";
 	}
 
 	@DeleteMapping("/deleteproduct/{id}")
