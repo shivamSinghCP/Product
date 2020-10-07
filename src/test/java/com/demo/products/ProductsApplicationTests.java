@@ -7,13 +7,14 @@ class ProductsApplicationTests {
 
 	// @Test
 	// void contextLoads() {
+		
 	// }
 
 	// @Test
 	// void testProduct() throws Exception{
 
-	// 	@Autowired
-	// 	MockMvc mockmvc;
+	// 	@Mock
+	// 	ProductsController controller;
 
 
 	// }
