@@ -1,1 +1,1 @@
-# demo
+# product details
