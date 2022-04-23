@@ -44,7 +44,7 @@ public class ProductsController{
 
 	@PostMapping("/createproduct")
 	public String createProduct(@ModelAttribute @NotNull @Valid Products product){
-		return productService.createproduct(product);
+		return productService.createProduct(product);
 	}
 
 	@PutMapping("/updateproduct")

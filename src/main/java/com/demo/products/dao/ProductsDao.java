@@ -19,7 +19,7 @@ public class ProductsDao {
 	@Autowired
 	ProductsRepository productsRepository;
 
-	public Products getProductfromId(int product_id) {
+	public Products getProduct(int product_id) {
 		Optional<ProductsEntity> product = productsRepository.findById(product_id);
 		ProductsEntity productsEntity = product.get();
 		Products products = new ProductsImpl(productsEntity.getId(), productsEntity.getProductName(), productsEntity.isVisible()
@@ -52,7 +52,7 @@ public class ProductsDao {
 		return new ProductsEntity(product.getProductName(), product.isVisible(), 1);
 	}
 
-	public String updatePrduct(Products product, int id) throws RuntimeException{
+	public String updateProduct(Products product, int id) throws RuntimeException{
 		Optional<ProductsEntity> productById = productsRepository.findById(id);
 		if(productById.isPresent()){
 			ProductsEntity productsEntity = getProductEntity(product);

@@ -19,7 +19,7 @@ public class ProductService {
 	}
 
 	public Products getProduct(int product_id) {
-		Products product = productsDao.getProductfromId(product_id);
+		Products product = productsDao.getProduct(product_id);
 		return product;
 
 	}
@@ -29,13 +29,13 @@ public class ProductService {
 		return productList;
 	}
 
-	public String createproduct(Products product){
+	public String createProduct(Products product){
 		String status = productsDao.createProduct(product);
 		return status;
 	}
 
 	public String updateProduct(Products product, int id){
-		String status = productsDao.updatePrduct(product,id);
+		String status = productsDao.updateProduct(product,id);
 		return status;
 	}
 
