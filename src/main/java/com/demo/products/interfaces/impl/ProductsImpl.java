@@ -1,4 +1,4 @@
-package com.demo.products.impl;
+package com.demo.products.interfaces.impl;
 
 import javax.annotation.ManagedBean;
 
